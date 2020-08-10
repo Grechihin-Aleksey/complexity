@@ -1,12 +1,91 @@
-let num = 266219;
-let num_1 = String(num);
-let num_2 = num_1.split("");
+let lang = prompt('Выбрать язык вывода дней недели: "ru" или "en"');
 
-let result = num_2.reduce(function (a, b) {
-  return a * b;
-});
+/*if (lang === "ru") {
+  console.log(
+    "Понедельник",
+    "Вторник",
+    "Среда",
+    "Четверг",
+    "Пятница",
+    "Суббота",
+    "Восресенье"
+  );
+}
+if (lang === "en") {
+  console.log(
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  );
+} else {
+  console.log("Язык не поддерживается.");
+}*/
 
-console.log(result);
-let name = result ** 3;
-let name_1 = String(name).slice(0, 2);
-console.log(name_1);
+/*switch (lang) {
+  case "ru":
+    console.log(
+      "Понедельник",
+      "Вторник",
+      "Среда",
+      "Четверг",
+      "Пятница",
+      "Суббота",
+      "Восресенье"
+    );
+    break;
+  case "en":
+    console.log(
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    );
+    break;
+  default:
+    console.log("Ошибка при выборе языка.");
+    break;
+}*/
+
+let i = [
+  [
+    "Понедельник",
+    "Вторник",
+    "Среда",
+    "Четверг",
+    "Пятница",
+    "Суббота",
+    "Восресенье",
+  ],
+  [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ],
+];
+
+let rezalt1 = i === "ru" ? i[0] : i === "en" ? i[1] : "Язык не поддерживается";
+
+console.log(rezalt1);
+
+let namePerson = prompt("Введите имя:");
+let rezalt;
+
+rezalt =
+  namePerson === "Артем"
+    ? "Директор."
+    : namePerson === "Максим"
+    ? "Преподаватель"
+    : "Студент";
+
+console.log(rezalt);

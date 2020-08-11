@@ -1,4 +1,4 @@
-let lang = prompt('Выбрать язык вывода дней недели: "ru" или "en"');
+//let lang = prompt('Выбрать язык вывода дней недели: "ru" или "en"');
 
 /*if (lang === "ru") {
   console.log(
@@ -53,7 +53,7 @@ if (lang === "en") {
     break;
 }*/
 
-let i = [
+/*let i = [
   [
     "Понедельник",
     "Вторник",
@@ -88,4 +88,15 @@ rezalt =
     ? "Преподаватель"
     : "Студент";
 
-console.log(rezalt);
+console.log(rezalt);*/
+
+let lang = "        привет";
+let num = function (a) {
+  if (typeof a === "string" && a.length > 10) {
+    console.log(lang.trim().substr(0, 10) + "...");
+  }
+  if (typeof a !== "string") {
+    console.log("не строка");
+  }
+};
+num(lang);

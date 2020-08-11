@@ -1,6 +1,6 @@
-let lang = "        привет";
+let lang = "          привет";
 let num = function (a) {
-  if (typeof a === "string" && a.length > 10) {
+  if (typeof a === "string" && a.length > 1) {
     console.log(lang.trim().substr(0, 10) + "...");
   }
   if (typeof a !== "string") {

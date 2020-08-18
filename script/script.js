@@ -1,24 +1,23 @@
-let arr = ["32", "27", "885", "104", "47", "78", "477"];
+"use strict";
 
-arr.forEach(function (item) {
-  if (item.startsWith("2") || item.startsWith("4")) {
-    console.log(item);
-  }
-});
+let week = [
+  "Понедельник",
+  "Вторник",
+  "Среда",
+  "Четверг",
+  "Пятница",
+  "Суббота",
+  "Воскресенье",
+];
 
-let n = 1;
+for (let i = 0, len = week.length; i < len; i++) {
+  let html = week[i];
+  if (i === 1) html = html.bold();
+  else if (i > 4) html = html.italics();
 
-while (n <= 100) {
-  if (n !== 1) {
-    let result = 2;
-    let i = 2;
-    while (n % i !== 0) {
-      i += 1;
-      result += 1;
-    }
-    if (result == n) {
-      console.log(n + " делитель этого числа 1 и " + n);
-    }
-  }
-  n += 1;
+  const div = document.createElement("div");
+  div.innerHTML = html;
+  document.body.appendChild(div);
 }
+let date = new Date(2020, 7, 18);
+console.log(date);

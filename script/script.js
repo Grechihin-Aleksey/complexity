@@ -13,7 +13,6 @@ let week = [
 let d = new Date();
 const dayIndex = d.getDay();
 
-const dayName = week[dayIndex];
 
 for (let i = 0, len = week.length; i < len; i++) {
   let html = week[i];

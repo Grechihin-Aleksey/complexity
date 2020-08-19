@@ -17,6 +17,8 @@ for (let i = 0, len = week.length; i < len; i++) {
   let html = week[i];
 
   if (i === dayIndex && i === 0) html = html = "<b><i>" + html + "</i></b>";
+  else if (i === dayIndex && i === 6)
+    html = html = "<b><i>" + html + "</i></b>";
   else if (i === dayIndex) html = "<b>" + html + "</b>";
   else if (i === 0 || i === 6) html = "<i>" + html + "</i>";
   else if (i === dayIndex && i === 0)
